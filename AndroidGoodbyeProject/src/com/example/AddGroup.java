@@ -84,6 +84,20 @@ public class AddGroup extends HttpServlet{
 	        	out.println("FAIL");
 	        }
 	        
+	        Statement stmt1 = connect.createStatement();
+		    ResultSet rs1 = stmt1.executeQuery("select count(*) c from groups where groupId="+num+";");
+		    int firstGroup=0;
+		    if (rs1.next()) {
+				firstGroup=rs1.getInt("c");
+			}
+	        
+		    if (firstGroup==0) {
+		    	pstmt = (PreparedStatement) connect.prepareStatement("insert into group(groupId,iconVersion) values(?,?)");
+		        pstmt.setInt(1, num);
+		        pstmt.setInt(2, 0);
+		        pstmt.executeUpdate();
+			}
+
 	        pstmt.close();
 	        connect.close();
 	        File f = new File(dir);  
