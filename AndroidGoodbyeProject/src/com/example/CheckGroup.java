@@ -24,7 +24,7 @@ import com.google.gson.Gson;
 /**
  * Servlet implementation class CheckGroup
  */
-@WebServlet("/CheckGroup")
+
 public class CheckGroup extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

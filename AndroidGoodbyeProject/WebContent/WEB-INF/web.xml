@@ -9,5 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
+  <servlet>
+    <description></description>
+    <display-name>CheckGroup</display-name>
+    <servlet-name>CheckGroup</servlet-name>
+    <servlet-class>com.example.CheckGroup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckGroup</servlet-name>
+    <url-pattern>/CheckGroup</url-pattern>
+  </servlet-mapping>
 </web-app>
