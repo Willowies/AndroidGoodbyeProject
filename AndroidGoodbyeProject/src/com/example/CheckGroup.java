@@ -89,7 +89,7 @@ public class CheckGroup extends HttpServlet {
 			while (rs.next()) {
 				User u = new User();
 				u.setName(rs.getString("name"));
-				u.setAccount(rs.getInt("userAccount"));
+				u.setAccount(rs.getInt("account"));
 				users.add(u);
 			}
 			Gson gson = new Gson();
