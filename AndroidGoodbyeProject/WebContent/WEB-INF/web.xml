@@ -19,4 +19,15 @@
     <servlet-name>CheckGroup</servlet-name>
     <url-pattern>/CheckGroup</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UploadGroupIcon</display-name>
+    <servlet-name>UploadGroupIcon</servlet-name>
+    <servlet-class>com.example.UploadGroupIcon</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadGroupIcon</servlet-name>
+    <url-pattern>/UploadGroupIcon</url-pattern>
+  </servlet-mapping>
 </web-app>
