@@ -55,6 +55,7 @@ public class CheckGroup extends HttpServlet {
 		response.setContentType("text/plain");
 
 		String action = request.getParameter("action");
+		System.out.println(" CheckGroup action:"+action);
 		try {
 			if ("checkGroupIcon".equals(action)) {
 				checkIcon(request, response);
